@@ -1,0 +1,18 @@
+<mat-drawer-container class="drawer-container">
+  <mat-drawer
+    mode="side"
+    opened="true"
+    class="drawer"
+    [mode]="(isHandset$ | async) ? 'over' : 'side'"
+  >
+    <app-sidenav></app-sidenav>
+  </mat-drawer>
+
+  <mat-drawer-content class="drawer-content">
+    <app-header></app-header>
+
+    <div class="main-content">
+      <!-- <router-outlet></router-outlet> -->
+    </div>
+  </mat-drawer-content>
+</mat-drawer-container>

@@ -1,0 +1,24 @@
+<h2 mat-dialog-title class="text-lg font-bold p-5">Confirm Logout</h2>
+<mat-dialog-content class="p-4">
+  <p class="text-sm">
+    Are you sure you want to logout? This will end your current session and you
+    will be required to log in again to access the application.
+  </p>
+</mat-dialog-content>
+<mat-dialog-actions align="end" class="flex justify-between p-4">
+  <button
+    mat-button
+    class="mr-2 hover:bg-gray-400 py-2 px-4 rounded"
+    (click)="onCancel()"
+  >
+    Cancel
+  </button>
+  <button
+    mat-raised-button
+    color="warn"
+    class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded"
+    (click)="onConfirm()"
+  >
+    Logout
+  </button>
+</mat-dialog-actions>

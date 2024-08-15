@@ -1,0 +1,32 @@
+/* Make sure the container takes up the full height */
+.drawer-container {
+    height: 100vh;
+  }
+  
+  /* Ensure the drawer doesn't overlap with content */
+  .drawer {
+    width: 255px; /* Adjust width based on your sidebar's width */
+  }
+  
+  /* Content inside mat-drawer-content should respect the drawer and header */
+  .drawer-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  /* Header takes up the top portion */
+  app-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+  }
+  
+  /* Main content should take up the remaining space */
+  .main-content {
+    flex-grow: 1;
+    padding: 16px; /* Adjust based on desired padding */
+    overflow-y: auto;
+  }
+  
